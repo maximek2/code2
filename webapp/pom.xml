@@ -10,10 +10,10 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>webserver</artifactId>
+  <artifactId>webapp</artifactId>
   <packaging>war</packaging>
-  <name>Webserver</name>
-  <description>Webserver.</description>
+  <name>Webapp</name>
+  <description>Webapp.</description>
 
   <build>
     <finalName>${project.artifactId}</finalName>
