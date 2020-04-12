@@ -408,6 +408,6 @@ def getReleaseVersion() {
 //                        }
 //                    }
 //                },
-//                failFast:true)
+//                failFast: true)
 //    }
 //}
