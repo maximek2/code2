@@ -1,25 +1,15 @@
 pipeline {
-    agent { docker 'maven:3-alpine' } 
+    agent any
     stages {
-        stage('Example Build') {
+        stage('Hello') {
             steps {
-                sh 'mvn build'
+                echo 'Hello World'
             }
         }
     }
-    
-    stages {
-        stage('Example package') {
-            steps {
-                sh 'mvn package'
-            }
-        }
-    }
-    stages {
-        stage('Example deploy ') {
-            steps {
-                sh 'mvn deploy'
-            }
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
         }
     }
 }
